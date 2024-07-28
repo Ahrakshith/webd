@@ -1,0 +1,58 @@
+div {
+    height: 200px;
+    width: 80%;
+    border: 2px solid black;
+    margin: 10px auto;
+    background-color: aliceblue;
+}
+
+/* h1 {
+    animation-name: textanimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 5;
+    animation-direction: alternate;
+} */
+
+/* h1 {
+    animation: textanimation 2S ease-in 0S infinite normal;
+} */
+
+@keyframes textanimation {
+
+    from {
+        font-size: 40px;
+    }
+
+    to {
+        font-size: 60px;
+    }
+
+}
+
+@media (width:600px) {
+    div {
+        background-color: aquamarine;
+    }
+}
+
+@media (max-width:400px) {
+    div {
+        background-color: brown
+    }
+
+    ;
+}
+
+@media (min-width:700px) {
+    div {
+        background-color: bisque;
+    }
+}
+
+@media (min-width:400px) and (max-width:500px) {
+    div {
+        background-color: cadetblue;
+    }
+}

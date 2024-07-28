@@ -1,0 +1,42 @@
+div {
+    height: 500px;
+    width: 80%;
+    margin: 20px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    /* justify content works on the major axis and its how the flex itmes can be arranged like space around */
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    /* align items and align content work son the cross axis and the items cxan be arranged in like flex start based on crosss axis */
+    /* align-items: flex-end; */
+    /* align-content: center;
+
+ */
+
+}
+
+.orange {
+    height: 50px;
+    width: 20px;
+    border: 2px solid black;
+    /* flex-basis: 400px; */
+
+    /* flex basis allows us to increase the size of an div to take the remaining space or incase if v need to increase a space of a particular div .. in case pf major axis being on row it increases the width of the div and if the majpr axis is the columb it increases the height */
+    flex-shrink: 2;
+}
+
+.green {
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    /* flex-grow: 1; */
+    flex-shrink: 1;
+    /* flex grow will occupy the remaining space as a factor  */
+    /* flex shrink will shrinnk the div by  a factor */
+}
+
+h1 {
+    height: 100px;
+    width: 200px;
+}

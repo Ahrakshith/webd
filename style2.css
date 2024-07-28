@@ -1,0 +1,62 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* descendent selector */
+span button {
+    background-color: black;
+    color: aliceblue;
+}
+
+p a {
+    color: aliceblue;
+    background-color: aqua;
+}
+
+/* sibling combinator */
+p+h3 {
+    text-decoration: line-through;
+}
+
+/* child combinator
+ */
+span>button {
+    background-color: antiquewhite;
+    color: black;
+}
+
+div>input {
+    color: black;
+    background-color: aqua;
+}
+
+/* attribute selector */
+input[type="text"] {
+    color: saddlebrown;
+}
+
+input[type="password"] {
+    color: black;
+}
+
+div[id="myid"] p {
+    color: green;
+}
+
+button:hover {
+    color: hotpink;
+}
+
+button:active {
+    background-color: hotpink;
+    color: black;
+}
+
+input[type="radio"]:checked+label {
+    color: red;
+}
+
+/* nth of type   */
+p:nth-of-type(2n) {
+    color: aqua;
+}
